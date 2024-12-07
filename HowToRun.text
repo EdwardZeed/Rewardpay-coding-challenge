@@ -1,0 +1,7 @@
+To run this application, first ensure that the node version you are using is over 14. 
+
+Run `npm install` in the terminal to install the required typescript packages. 
+
+Run `npm start` to run the application
+
+Run `npx jest` to run the unit test.

@@ -8,6 +8,10 @@ interface Account {
 }
 
 export class AccountMetricCalculator {
+  /**
+   * Returns the calculator to calculat revenue, expense, gross profit margin, net profit margin and working capital ratio
+   *
+   */
   private accounts: Account[];
   private revenue: number = 0;
   private expense: number = 0;
@@ -18,6 +22,10 @@ export class AccountMetricCalculator {
     this.accounts = parsedJson.data;
   }
 
+  /**
+   * add up the value of revenue if the account_category is revenue
+   * @returns revenue
+   */
   calculateRevenue(): number {
     var sum = 0;
     for (var index in this.accounts) {
@@ -30,6 +38,10 @@ export class AccountMetricCalculator {
     return sum;
   }
 
+  /**
+   * add up the value of expense if the account category is expense
+   * @returns expense
+   */
   calculateExpense(): number {
     var sum = 0;
     for (var index in this.accounts) {
@@ -42,9 +54,10 @@ export class AccountMetricCalculator {
     return sum;
   }
 
-  // function to calculate the gross profit margin
-  // adding up the total value of account_type == sales and value_type == debit
-  // then divided by revenue
+  /**
+   * adding up the total value of account_type == sales and value_type == debit then divided by revenue
+   * @returns gross profit margin
+   */
   calculateGPM(): number {
     var sum = 0;
     // check if revenue has been calculated before
@@ -60,11 +73,18 @@ export class AccountMetricCalculator {
     return sum / this.revenue;
   }
 
-  // function to calculate net profit margin
+  /**
+   * revenue substract expense then divided by revenue
+   * @returns net profit margin
+   */
   calculateNPM(): number {
     return (this.revenue - this.expense) / this.revenue;
   }
 
+  /**
+   * dividing assets by liabilities
+   * @returns working capital ratio
+   */
   caculateWCR(): number {
     var debitAssets = 0;
     var creditAssets = 0;
@@ -137,6 +157,9 @@ export class AccountMetricCalculator {
     return `${(value * 100).toFixed(1)}%`;
   }
 
+  /**
+   * output all the metric in the console
+   */
   calculateMetric() {
     const revenue = this.calculateRevenue();
     const expense = this.calculateExpense();
