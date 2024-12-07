@@ -7,7 +7,7 @@ interface Account {
   total_value: number;
 }
 
-class AccountMetricCalculator {
+export class AccountMetricCalculator {
   private accounts: Account[];
   private revenue: number = 0;
   private expense: number = 0;
@@ -129,11 +129,11 @@ class AccountMetricCalculator {
     return assets / liabilities;
   }
 
-  private formatCurrency(value: number): string {
+  formatCurrency(value: number): string {
     return `$${Math.round(value).toLocaleString()}`;
   }
 
-  private formatPercentage(value: number): string {
+  formatPercentage(value: number): string {
     return `${(value * 100).toFixed(1)}%`;
   }
 

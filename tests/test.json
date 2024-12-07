@@ -1,0 +1,92 @@
+{
+  "object_category": "general-ledger",
+  "connection_id": "69260737-4c37-4f28-a9dc-270473a6d84a",
+  "user": "b0c9fe7c-915e-45e4-8e9e-49d4f27281a5",
+  "object_creation_date": "2020-10-30T01:58:16.723Z",
+  "data": [
+    {
+      "account_category": "revenue",
+      "total_value": 10000,
+      "account_type": "sales",
+      "value_type": "credit"
+    },
+    {
+      "account_category": "expense",
+      "total_value": 2000,
+      "account_type": "overheads",
+      "value_type": "debit"
+    },
+    {
+      "account_category": "assets",
+      "total_value": 20000,
+      "account_type": "bank",
+      "value_type": "debit"
+    },
+    {
+      "account_category": "assets",
+      "total_value": 30000,
+      "account_type": "current",
+      "value_type": "debit"
+    },
+    {
+      "account_category": "assets",
+      "total_value": 40000,
+      "account_type": "current_accounts_receivable",
+      "value_type": "debit"
+    },
+    {
+      "account_category": "assets",
+      "total_value": 60000,
+      "account_type": "bank",
+      "value_type": "credit"
+    },
+    {
+      "account_category": "assets",
+      "total_value": 75000,
+      "account_type": "current",
+      "value_type": "credit"
+    },
+    {
+      "account_category": "assets",
+      "total_value": 100000,
+      "account_type": "current_accounts_receivable",
+      "value_type": "credit"
+    },
+    {
+      "account_category": "liability",
+      "total_value": 20000,
+      "account_type": "current",
+      "value_type": "credit"
+    },
+    {
+      "account_category": "liability",
+      "total_value": 2000,
+      "account_type": "current_accounts_payable",
+      "value_type": "credit"
+    },
+    {
+      "account_category": "liability",
+      "total_value": 10000,
+      "account_type": "current",
+      "value_type": "debit"
+    },
+    {
+      "account_category": "liability",
+      "total_value": 5000,
+      "account_type": "current_accounts_payable",
+      "value_type": "debit"
+    },
+    {
+      "account_category": "revenue",
+      "total_value": 20000,
+      "account_type": "sales",
+      "value_type": "debit"
+    },
+    {
+      "account_category": 1,
+      "total_value": "20000",
+      "account_type": 2,
+      "value_type": 3
+    }
+  ]
+}
